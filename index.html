@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENPAL - THE NEXT FRONTIER</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script defer src="background.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg"></canvas>
+
+    <header>
+        <div class="header-container">
+            <img src="zenpal-logo.png" alt="Smart Bowl Logo" class="logo">
+            <h1 class="header-title">ZENPAL - THE NEXT FRONTIER</h1>
+        </div>
+        <nav>
+            <a href="about.html">About</a>
+            <a href="features.html">Features</a>
+            <a href="guidance.html">Guidance</a>
+            <a href="weight-categories.html">Weight Categories</a>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm <span>ZENPAL</span></h2>
+            <p>"Welcome to ZENPAL – where smart nutrition meets innovation! 🍽️✨ Transform your eating habits with our Smart Diet Bowl, designed to track, control, and optimize your meals for a healthier you. Let ZENPAL guide you toward a balanced lifestyle with intelligent meal recommendations and precision intake tracking. 🚀🥗"</p>
+            <a href="#input-section" class="btn">Welcome</a> <!-- Updated link here -->
+        </div>
+        <div class="profile-pic">
+            <img src="zenpal-logo.png" alt="Smart Bowl Logo">
+        </div>
+    </section>
+    
+    <div class="container" id="input-section"> <!-- Added ID here -->
+        <h2>Explore me</h2>
+        <div class="input-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height">
+        </div>
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight">
+        </div>
+        <button onclick="calculateBMI()">Calculate</button>
+        <h3 id="bmi-result"></h3>
+        <h3 id="meal-calorie-intake"></h3>
+        <h3 id="breakfast-recommendation"></h3>
+        <h3 id="lunch-recommendation"></h3>
+        <h3 id="dinner-recommendation"></h3>
+        <h3 id="meal-weight"></h3>
+    </div>
+    
+    <footer>
+        <p>“Your body is a reflection of your lifestyle.”</p>
+        <p>© 2025 ZENPAL. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
